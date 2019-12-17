@@ -13,7 +13,7 @@ int main()
   printf("Sum of %d and %d is %d\n", a, b, c);
   
   d = a;
-  a = b;
-  b = d;
-  printf("Sum of %d and %d is %d\n", a, b, c);
+  a = c;
+  c = d;
+  printf("Difference of %d and %d is %d\n", a, b, c);
 }
