@@ -17,6 +17,12 @@ int main()
 		//Serial.println(a);
 		printf("%d\n", a);
 		i++;
+		/*if( i % 2 == 0 ){
+			a = i;
+			printf("%d\n", a);
+			
+			i++;
+		}*/
 	}
 
 	return 0;
