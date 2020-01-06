@@ -12,6 +12,7 @@ int main()
   float i = 3.5;
   while(i < 13) {
     area = findA(i);
+    printf("The radius is %f\n",i);
     printf("The area is %f\n",area);
     i++;
   }
