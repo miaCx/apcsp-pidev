@@ -20,10 +20,17 @@ int main()
 
   float d = 5;
   float e = 6;
-  int* ptrtod;
-  int* ptrtoe;
-
+  float* ptrtod = &d;
+  float* ptrtoe = &e;
 
   printf("d is %f\ne is %f\n", d, e);
   printf("address of d is %d\naddress of e is %d\n", &d, &e);
+
+  float n = *ptrtod;
+  *ptrtod = *ptrtoe;
+  *ptrtoe = n;
+
+  printf("d is %f\ne is %f\n", d, e);
+  printf("address of d is %d\naddress of e is %d\n", &d, &e);
+
 }
