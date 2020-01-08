@@ -26,8 +26,9 @@ int main()
   while (1)
   {
     fgets(input, 256, stdin);
-    if (sscanf(input, "%f", &outerradius) == 1) break;
-    printf("Please enter a valid number.\n");
+    if (sscanf(input, "%f", &outerradius) == 1)
+    if (radius < outerradius) break;
+    printf("Please enter a valid number greater than the minimum radius.\n");
   }
 
   area = findA(radius);
