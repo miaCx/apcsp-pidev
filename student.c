@@ -68,12 +68,16 @@ int main()
     }
   }
 
-//  char studentetc[100];
-//  studentetc[1] = "&student1";
+  char studenttoprint[100];
+  for (int i = i; i < numberofstudents; i++) {
+    strcat("&student", i);
+    studenttoprint[i] = "&student1";
+  }
 
-  /*for (int i = 1; i < numberofstudents; i++) {
-    printStudent(&student1);
-  }*/
+  for (int i = 1; i < numberofstudents; i++) {
+    //printStudent(&student1);
+    printStudent(studenttoprint[i]);
+  }
 
 }
 
